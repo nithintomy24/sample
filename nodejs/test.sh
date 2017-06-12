@@ -11,7 +11,7 @@ while [ $? -ne 0 ];do
 done
 
 # Create the iot database
-curl -i -XPOST http://localhost:8086/query --data-urlencode "q=CREATE DATABASE iot"
+curl -i -XPOST http://localhost:8086/query --data-urlencode "q=CREATE DATABASE sample"
 
 # Run the tests specifying the InfluxDB host
 INFLUXDB_HOST=localhost npm test

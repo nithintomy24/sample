@@ -1,5 +1,5 @@
 {
-  "name": "iot",
+  "name": "sample",
   "version": "1.0.0",
   "description": "IoT example project",
   "main": "index.js",
