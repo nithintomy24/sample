@@ -4,6 +4,7 @@ machine:
 
 test:
   override:
+    - docker-compose -f compose-test.yml build test
     - docker-compose -f compose-test.yml run test
 
 deployment:
