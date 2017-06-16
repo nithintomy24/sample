@@ -11,7 +11,7 @@ deployment:
     branch: [ master ]
     commands:
       - docker build --rm=false -t nithintomy/sample:$CIRCLE_BRANCH .
-      - docker tag lucj/iot-api:$CIRCLE_BRANCH nithintomy/sample:$CIRCLE_SHA1
+      - docker tag nithintomy/sample:$CIRCLE_BRANCH nithintomy/sample:$CIRCLE_SHA1
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker push lucj/iot-api:$CIRCLE_BRANCH
-      - docker push lucj/iot-api:$CIRCLE_SHA1
+      - docker push nithintomy/sample:$CIRCLE_BRANCH
+      - docker push nithintomy/sample:$CIRCLE_SHA1

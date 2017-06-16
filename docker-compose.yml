@@ -10,7 +10,7 @@ services:
     volumes:
       - influxdata:/var/lib/influxdb
   api:
-    image: nithintomy/sample:v5
+    image: nithintomy/sample:v4
     command: npm start
     ports:
       - 1337:1337
