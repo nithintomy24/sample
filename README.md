@@ -1,1 +1,0 @@
-# nithintomy-sample-v4
