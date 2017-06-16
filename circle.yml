@@ -4,7 +4,7 @@ machine:
 
 test:
   override:
-    - docker-compose -f compose-test-ci.yml up
+    - docker-compose -f compose-test-ci.yml run sut
 
 deployment:
   hub:
