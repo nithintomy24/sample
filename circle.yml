@@ -12,6 +12,7 @@ deployment:
     commands:
       - docker build --rm=false -t nithintomy/sample:$CIRCLE_BRANCH .
       - docker tag nithintomy/sample:$CIRCLE_BRANCH nithintomy/sample:$CIRCLE_SHA1
+      - docker tag nithintomy/sample:$CIRCLE_BRANCH nithintomy/sample:latest
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker push nithintomy/sample:latest
       - docker push nithintomy/sample:$CIRCLE_BRANCH
