@@ -1,14 +1,13 @@
 {
   "name": "iot",
   "version": "1.0.0",
-  "description": "IoT example project",
+  "description": "IoT project",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "./node_modules/.bin/mocha test/functional.js"
   },
   "author": "Nithin Tomy",
-  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
