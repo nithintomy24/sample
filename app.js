@@ -25,8 +25,8 @@ app.post('/data',
              influx.writePoints([
                  {
                   measurement: 'data',
-                  tags: { type: req.body.type },
-                  fields: { sensor_id: req.body.sensor_id, value: req.body.value },
+                  tags: { sensor_id: req.body.sensor_id, type: req.body.type },
+                  fields: { value: req.body.value },
                   timestamp: new Date(req.body.ts).getTime() * 1000000
                  }
              ]).then(() => {

@@ -7,7 +7,7 @@
     "start": "node index.js",
     "test": "./node_modules/.bin/mocha test/functional.js"
   },
-  "author": "Luc Juggery",
+  "author": "Nithin Tomy",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.1",
