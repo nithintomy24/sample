@@ -10,5 +10,5 @@ let port   = process.env.PORT || 1337;
 
 // Run API
 app.listen(port, function(){
-    winston.info(util.format("Server listening on port %s", port));
+    winston.info(util.format("Server Started. Server listening on port %s", port));
 });
